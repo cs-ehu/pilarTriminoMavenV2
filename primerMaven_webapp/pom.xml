@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ehu.es.cs19</groupId>
+    <artifactId>primerMaven</artifactId>
+    <version>1.0</version>
+  </parent>
+  <groupId>ehu.es.cs19</groupId>
+  <artifactId>primerMaven_webapp</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  <name>primerMaven_webapp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+	  <optional>true</optional>
+    </dependency>
+	<dependency>
+		<groupId>ehu.es.cs19</groupId>
+		<artifactId>primerMaven_jar</artifactId>
+		<version>1.0</version>
+	</dependency>
+
+  </dependencies>
+  <build>
+    <finalName>primerMaven_webapp</finalName>
+	<plugins>
+		<plugin>
+		<groupId>org.mortbay.jetty</groupId>
+		<artifactId>maven-jetty-plugin</artifactId>
+		<version>6.1.26</version>
+	</plugin>
+		<!--<plugin>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>maven-jetty-plugin</artifactId>
+			<configuration>
+				<scanIntervalSeconds>3</scanIntervalSeconds>
+			</configuration>
+		</plugin>-->
+		
+	</plugins>
+  </build>
+</project>
