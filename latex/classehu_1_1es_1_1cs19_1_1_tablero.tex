@@ -1,0 +1,148 @@
+\hypertarget{classehu_1_1es_1_1cs19_1_1_tablero}{}\section{ehu.\+es.\+cs19.\+Tablero Class Reference}
+\label{classehu_1_1es_1_1cs19_1_1_tablero}\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_a0fd0f1e7629ab4a2097e8a2475ea73c2}{Tablero}} (int dimension)
+\item 
+int \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_acb9024a3118bb11491f6c29520c68bc0}{get\+Dimension}} ()
+\item 
+void \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_ae11f212fa702b46fabaf56b1a8260ac2}{marca\+Casilla\+Inicial}} (int fila, int columna)
+\item 
+\mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_casilla}{Casilla}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_addb7e4db7fc892b6b15dd5b3b9bebadc}{elegir\+Trimino}} (int fila, int columna, String cuadrante, int dimension\+Tablero, int dimension)
+\item 
+char \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_a902d0a64d3f7648130c66cfa4d1bca4d}{marca\+Tablero}} (\mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_casilla}{Casilla}}\mbox{[}$\,$\mbox{]} trimino\+Elegido)
+\item 
+String \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_a21bf3bd6c575b09f153c51b2f50d1488}{definir\+Cuadrante}} (int fila, int columna, int dimension)
+\item 
+void \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_a0a3dba73a12a398c2c3d72577027dc7a}{imprime\+Tablero}} (int dimension, String nombre\+Fichero)  throws I\+O\+Exception 
+\item 
+char \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_tablero_a35427ed7692ad59556f26281d22625fe}{nuevo\+Simbolo}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_a0fd0f1e7629ab4a2097e8a2475ea73c2}\label{classehu_1_1es_1_1cs19_1_1_tablero_a0fd0f1e7629ab4a2097e8a2475ea73c2}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{Tablero()}{Tablero()}}
+{\footnotesize\ttfamily ehu.\+es.\+cs19.\+Tablero.\+Tablero (\begin{DoxyParamCaption}\item[{int}]{dimension }\end{DoxyParamCaption})}
+
+Instantiates a new tablero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & the dimension \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_a21bf3bd6c575b09f153c51b2f50d1488}\label{classehu_1_1es_1_1cs19_1_1_tablero_a21bf3bd6c575b09f153c51b2f50d1488}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!definirCuadrante@{definirCuadrante}}
+\index{definirCuadrante@{definirCuadrante}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{definirCuadrante()}{definirCuadrante()}}
+{\footnotesize\ttfamily String ehu.\+es.\+cs19.\+Tablero.\+definir\+Cuadrante (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{int}]{dimension }\end{DoxyParamCaption})}
+
+Definir cuadrante.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & the fila \\
+\hline
+{\em columna} & the columna \\
+\hline
+{\em dimension} & the dimension \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_addb7e4db7fc892b6b15dd5b3b9bebadc}\label{classehu_1_1es_1_1cs19_1_1_tablero_addb7e4db7fc892b6b15dd5b3b9bebadc}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!elegirTrimino@{elegirTrimino}}
+\index{elegirTrimino@{elegirTrimino}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{elegirTrimino()}{elegirTrimino()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_casilla}{Casilla}} \mbox{[}$\,$\mbox{]} ehu.\+es.\+cs19.\+Tablero.\+elegir\+Trimino (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{String}]{cuadrante,  }\item[{int}]{dimension\+Tablero,  }\item[{int}]{dimension }\end{DoxyParamCaption})}
+
+Elegir trimino.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & the fila \\
+\hline
+{\em columna} & the columna \\
+\hline
+{\em cuadrante} & the cuadrante \\
+\hline
+{\em dimension\+Tablero} & the dimension tablero \\
+\hline
+{\em dimension} & the dimension \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the casilla\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_acb9024a3118bb11491f6c29520c68bc0}\label{classehu_1_1es_1_1cs19_1_1_tablero_acb9024a3118bb11491f6c29520c68bc0}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!getDimension@{getDimension}}
+\index{getDimension@{getDimension}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{getDimension()}{getDimension()}}
+{\footnotesize\ttfamily int ehu.\+es.\+cs19.\+Tablero.\+get\+Dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_a0a3dba73a12a398c2c3d72577027dc7a}\label{classehu_1_1es_1_1cs19_1_1_tablero_a0a3dba73a12a398c2c3d72577027dc7a}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!imprimeTablero@{imprimeTablero}}
+\index{imprimeTablero@{imprimeTablero}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{imprimeTablero()}{imprimeTablero()}}
+{\footnotesize\ttfamily void ehu.\+es.\+cs19.\+Tablero.\+imprime\+Tablero (\begin{DoxyParamCaption}\item[{int}]{dimension,  }\item[{String}]{nombre\+Fichero }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+Imprime tablero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & the dimension \\
+\hline
+{\em nombre\+Fichero} & the nombre fichero \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & Signals that an I/O exception has occurred. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_ae11f212fa702b46fabaf56b1a8260ac2}\label{classehu_1_1es_1_1cs19_1_1_tablero_ae11f212fa702b46fabaf56b1a8260ac2}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!marcaCasillaInicial@{marcaCasillaInicial}}
+\index{marcaCasillaInicial@{marcaCasillaInicial}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{marcaCasillaInicial()}{marcaCasillaInicial()}}
+{\footnotesize\ttfamily void ehu.\+es.\+cs19.\+Tablero.\+marca\+Casilla\+Inicial (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_a902d0a64d3f7648130c66cfa4d1bca4d}\label{classehu_1_1es_1_1cs19_1_1_tablero_a902d0a64d3f7648130c66cfa4d1bca4d}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!marcaTablero@{marcaTablero}}
+\index{marcaTablero@{marcaTablero}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{marcaTablero()}{marcaTablero()}}
+{\footnotesize\ttfamily char \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} ehu.\+es.\+cs19.\+Tablero.\+marca\+Tablero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classehu_1_1es_1_1cs19_1_1_casilla}{Casilla}} \mbox{[}$\,$\mbox{]}}]{trimino\+Elegido }\end{DoxyParamCaption})}
+
+Marca tablero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trimino\+Elegido} & the trimino elegido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the char\mbox{[}\mbox{]}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classehu_1_1es_1_1cs19_1_1_tablero_a35427ed7692ad59556f26281d22625fe}\label{classehu_1_1es_1_1cs19_1_1_tablero_a35427ed7692ad59556f26281d22625fe}} 
+\index{ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}!nuevoSimbolo@{nuevoSimbolo}}
+\index{nuevoSimbolo@{nuevoSimbolo}!ehu.es.cs19.Tablero@{ehu.es.cs19.Tablero}}
+\subsubsection{\texorpdfstring{nuevoSimbolo()}{nuevoSimbolo()}}
+{\footnotesize\ttfamily char ehu.\+es.\+cs19.\+Tablero.\+nuevo\+Simbolo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Nuevo simbolo.
+
+\begin{DoxyReturn}{Returns}
+the char 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+primer\+Maven\+\_\+jar/src/main/java/ehu/es/cs19/\mbox{\hyperlink{_tablero_8java}{Tablero.\+java}}\end{DoxyCompactItemize}

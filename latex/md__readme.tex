@@ -1,0 +1,274 @@
+\subparagraph*{Descripción del proyecto\+:}
+
+Este proyecto dibuja una matriz de triminos dada una casilla inicial y una dimensión potencia de dos que por defecto es 8 Lo hice en la asignatura de Programación II cursada en la U\+N\+ED.
+
+Tras conocer la herramienta Maven en la asignatura de Calidad de Software cursada en la E\+H\+U/\+U\+PV\+:
+
+
+\begin{DoxyItemize}
+\item He creado un proyecto en Maven y he incluido las clases que habia generado en la estructura primera transformando así este proyecto en un proyecto Maven(a la inversa no me generaba la misma arquitectura desde eclipse).
+\end{DoxyItemize}
+
+\subparagraph*{Para ejecutar el proyecto\+:}
+
+Situarnos dentro de la carpeta primer\+Maven\+\_\+jar y desde allí el comando\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{java -cp target/primerMaven\_jar-1.0.jar ehu.es.cs19.Trimino 6 7 16}
+\end{DoxyCode}
+ Este comando puede tener dos parámetros o tres Los dos primeros indican la posición x,y de la casilla de inicio (en este caso decimos que la posición de la casilla de inicio es (6,7)) y el tercero la dimensión de la matriz Q\+UE HA DE S\+ER U\+NA P\+O\+T\+E\+N\+C\+IA DE D\+OS(en este caso 16; por defecto es 8)
+
+\subparagraph*{Maven en el proyecto}
+
+Utilizo la herramienta Maven en el proyecto por lo que tendrás que instalar maven en tu ordenador si clonas este proyecto. Con el comando mvn install
+
+La estructura del proyecto es la siguiente\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Listado de rutas de carpetas}
+\DoxyCodeLine{}
+\DoxyCodeLine{C:.}
+\DoxyCodeLine{│   ascii.txt}
+\DoxyCodeLine{│   helpPom.txt}
+\DoxyCodeLine{│   pom.xml}
+\DoxyCodeLine{│   Readme.md}
+\DoxyCodeLine{│   tree.txt}
+\DoxyCodeLine{│   }
+\DoxyCodeLine{├───primerMaven\_jar}
+\DoxyCodeLine{│   │   .classpath}
+\DoxyCodeLine{│   │   .project}
+\DoxyCodeLine{│   │   Análisis\_pilarTrimino.md}
+\DoxyCodeLine{│   │   pom.xml}
+\DoxyCodeLine{│   │   README.md}
+\DoxyCodeLine{│   │   text.txt}
+\DoxyCodeLine{│   │   }
+\DoxyCodeLine{│   ├───src}
+\DoxyCodeLine{│   │   ├───main}
+\DoxyCodeLine{│   │   │   ├───java}
+\DoxyCodeLine{│   │   │   │   └───ehu}
+\DoxyCodeLine{│   │   │   │       └───es}
+\DoxyCodeLine{│   │   │   │           └───cs19}
+\DoxyCodeLine{│   │   │   │                   Casilla.java}
+\DoxyCodeLine{│   │   │   │                   Estructura.java}
+\DoxyCodeLine{│   │   │   │                   Letras.java}
+\DoxyCodeLine{│   │   │   │                   Tablero.java}
+\DoxyCodeLine{│   │   │   │                   Trimino.java}
+\DoxyCodeLine{│   │   │   │                   TriminoDimension.java}
+\DoxyCodeLine{│   │   │   │                   }
+\DoxyCodeLine{│   │   │   └───resources}
+\DoxyCodeLine{│   │   └───test}
+\DoxyCodeLine{│   │       └───java}
+\DoxyCodeLine{│   │           └───ehu}
+\DoxyCodeLine{│   │               └───es}
+\DoxyCodeLine{│   │                   └───cs19}
+\DoxyCodeLine{│   │                           CuadranteTest.java}
+\DoxyCodeLine{│   │                           TriminoTest.java}
+\DoxyCodeLine{│   │                           }
+\DoxyCodeLine{│   └───target}
+\DoxyCodeLine{│       │   primerMaven\_jar-1.0.jar}
+\DoxyCodeLine{│       │   }
+\DoxyCodeLine{│       ├───classes}
+\DoxyCodeLine{│       │   │   .gitignore}
+\DoxyCodeLine{│       │   │   }
+\DoxyCodeLine{│       │   └───ehu}
+\DoxyCodeLine{│       │       └───es}
+\DoxyCodeLine{│       │           └───cs19}
+\DoxyCodeLine{│       │                   Casilla.class}
+\DoxyCodeLine{│       │                   Estructura.class}
+\DoxyCodeLine{│       │                   Letras.class}
+\DoxyCodeLine{│       │                   Tablero.class}
+\DoxyCodeLine{│       │                   Trimino.class}
+\DoxyCodeLine{│       │                   TriminoDimension.class}
+\DoxyCodeLine{│       │                   }
+\DoxyCodeLine{│       ├───generated-sources}
+\DoxyCodeLine{│       │   └───annotations}
+\DoxyCodeLine{│       ├───generated-test-sources}
+\DoxyCodeLine{│       │   └───test-annotations}
+\DoxyCodeLine{│       ├───maven-archiver}
+\DoxyCodeLine{│       │       pom.properties}
+\DoxyCodeLine{│       │       }
+\DoxyCodeLine{│       ├───maven-status}
+\DoxyCodeLine{│       │   └───maven-compiler-plugin}
+\DoxyCodeLine{│       │       ├───compile}
+\DoxyCodeLine{│       │       │   └───default-compile}
+\DoxyCodeLine{│       │       │           createdFiles.lst}
+\DoxyCodeLine{│       │       │           inputFiles.lst}
+\DoxyCodeLine{│       │       │           }
+\DoxyCodeLine{│       │       └───testCompile}
+\DoxyCodeLine{│       │           └───default-testCompile}
+\DoxyCodeLine{│       │                   createdFiles.lst}
+\DoxyCodeLine{│       │                   inputFiles.lst}
+\DoxyCodeLine{│       │                   }
+\DoxyCodeLine{│       ├───site}
+\DoxyCodeLine{│       │   │   dependencies.html}
+\DoxyCodeLine{│       │   │   dependency-info.html}
+\DoxyCodeLine{│       │   │   index.html}
+\DoxyCodeLine{│       │   │   plugin-management.html}
+\DoxyCodeLine{│       │   │   plugins.html}
+\DoxyCodeLine{│       │   │   project-info.html}
+\DoxyCodeLine{│       │   │   summary.html}
+\DoxyCodeLine{│       │   │   }
+\DoxyCodeLine{│       │   ├───css}
+\DoxyCodeLine{│       │   │       maven-base.css}
+\DoxyCodeLine{│       │   │       maven-theme.css}
+\DoxyCodeLine{│       │   │       print.css}
+\DoxyCodeLine{│       │   │       site.css}
+\DoxyCodeLine{│       │   │       }
+\DoxyCodeLine{│       │   └───images}
+\DoxyCodeLine{│       │       │   close.gif}
+\DoxyCodeLine{│       │       │   collapsed.gif}
+\DoxyCodeLine{│       │       │   expanded.gif}
+\DoxyCodeLine{│       │       │   external.png}
+\DoxyCodeLine{│       │       │   icon\_error\_sml.gif}
+\DoxyCodeLine{│       │       │   icon\_info\_sml.gif}
+\DoxyCodeLine{│       │       │   icon\_success\_sml.gif}
+\DoxyCodeLine{│       │       │   icon\_warning\_sml.gif}
+\DoxyCodeLine{│       │       │   newwindow.png}
+\DoxyCodeLine{│       │       │   }
+\DoxyCodeLine{│       │       └───logos}
+\DoxyCodeLine{│       │               build-by-maven-black.png}
+\DoxyCodeLine{│       │               build-by-maven-white.png}
+\DoxyCodeLine{│       │               maven-feather.png}
+\DoxyCodeLine{│       │               }
+\DoxyCodeLine{│       ├───surefire-reports}
+\DoxyCodeLine{│       │       ehu.es.cs19.AppTest.txt}
+\DoxyCodeLine{│       │       ehu.es.cs19.CuadranteTest.txt}
+\DoxyCodeLine{│       │       ehu.es.cs19.TriminoTest.txt}
+\DoxyCodeLine{│       │       TEST-ehu.es.cs19.AppTest.xml}
+\DoxyCodeLine{│       │       TEST-ehu.es.cs19.CuadranteTest.xml}
+\DoxyCodeLine{│       │       TEST-ehu.es.cs19.TriminoTest.xml}
+\DoxyCodeLine{│       │       }
+\DoxyCodeLine{│       └───test-classes}
+\DoxyCodeLine{│           │   .gitignore}
+\DoxyCodeLine{│           │   }
+\DoxyCodeLine{│           └───ehu}
+\DoxyCodeLine{│               └───es}
+\DoxyCodeLine{│                   └───cs19}
+\DoxyCodeLine{│                           CuadranteTest.class}
+\DoxyCodeLine{│                           TriminoTest.class}
+\DoxyCodeLine{│                           }
+\DoxyCodeLine{├───primerMaven\_webapp}
+\DoxyCodeLine{│   │   .classpath}
+\DoxyCodeLine{│   │   .project}
+\DoxyCodeLine{│   │   pom.xml}
+\DoxyCodeLine{│   │   }
+\DoxyCodeLine{│   ├───src}
+\DoxyCodeLine{│   │   └───main}
+\DoxyCodeLine{│   │       ├───java}
+\DoxyCodeLine{│   │       ├───resources}
+\DoxyCodeLine{│   │       ├───test}
+\DoxyCodeLine{│   │       └───webapp}
+\DoxyCodeLine{│   │           │   index.jsp}
+\DoxyCodeLine{│   │           │   }
+\DoxyCodeLine{│   │           └───WEB-INF}
+\DoxyCodeLine{│   │                   web.xml}
+\DoxyCodeLine{│   │                   }
+\DoxyCodeLine{│   └───target}
+\DoxyCodeLine{│       │   primerMaven\_webapp.war}
+\DoxyCodeLine{│       │   }
+\DoxyCodeLine{│       ├───classes}
+\DoxyCodeLine{│       ├───maven-archiver}
+\DoxyCodeLine{│       │       pom.properties}
+\DoxyCodeLine{│       │       }
+\DoxyCodeLine{│       ├───maven-status}
+\DoxyCodeLine{│       │   └───maven-compiler-plugin}
+\DoxyCodeLine{│       │       └───compile}
+\DoxyCodeLine{│       │           └───default-compile}
+\DoxyCodeLine{│       │                   inputFiles.lst}
+\DoxyCodeLine{│       │                   }
+\DoxyCodeLine{│       ├───primerMaven\_webapp}
+\DoxyCodeLine{│       │   │   index.jsp}
+\DoxyCodeLine{│       │   │   }
+\DoxyCodeLine{│       │   ├───META-INF}
+\DoxyCodeLine{│       │   └───WEB-INF}
+\DoxyCodeLine{│       │       │   web.xml}
+\DoxyCodeLine{│       │       │   }
+\DoxyCodeLine{│       │       ├───classes}
+\DoxyCodeLine{│       │       └───lib}
+\DoxyCodeLine{│       │               javax.servlet-api-3.1.0.jar}
+\DoxyCodeLine{│       │               jetty-http-9.4.15.v20190215.jar}
+\DoxyCodeLine{│       │               jetty-io-9.4.15.v20190215.jar}
+\DoxyCodeLine{│       │               jetty-server-9.4.15.v20190215.jar}
+\DoxyCodeLine{│       │               jetty-util-9.4.15.v20190215.jar}
+\DoxyCodeLine{│       │               log4j-api-2.11.1.jar}
+\DoxyCodeLine{│       │               log4j-core-2.11.1.jar}
+\DoxyCodeLine{│       │               log4j-web-2.11.1.jar}
+\DoxyCodeLine{│       │               primerMaven\_jar-1.0.jar}
+\DoxyCodeLine{│       │               }
+\DoxyCodeLine{│       ├───site}
+\DoxyCodeLine{│       │   │   dependencies.html}
+\DoxyCodeLine{│       │   │   dependency-info.html}
+\DoxyCodeLine{│       │   │   index.html}
+\DoxyCodeLine{│       │   │   plugin-management.html}
+\DoxyCodeLine{│       │   │   plugins.html}
+\DoxyCodeLine{│       │   │   project-info.html}
+\DoxyCodeLine{│       │   │   summary.html}
+\DoxyCodeLine{│       │   │   }
+\DoxyCodeLine{│       │   ├───css}
+\DoxyCodeLine{│       │   │       maven-base.css}
+\DoxyCodeLine{│       │   │       maven-theme.css}
+\DoxyCodeLine{│       │   │       print.css}
+\DoxyCodeLine{│       │   │       site.css}
+\DoxyCodeLine{│       │   │       }
+\DoxyCodeLine{│       │   └───images}
+\DoxyCodeLine{│       │       │   close.gif}
+\DoxyCodeLine{│       │       │   collapsed.gif}
+\DoxyCodeLine{│       │       │   expanded.gif}
+\DoxyCodeLine{│       │       │   external.png}
+\DoxyCodeLine{│       │       │   icon\_error\_sml.gif}
+\DoxyCodeLine{│       │       │   icon\_info\_sml.gif}
+\DoxyCodeLine{│       │       │   icon\_success\_sml.gif}
+\DoxyCodeLine{│       │       │   icon\_warning\_sml.gif}
+\DoxyCodeLine{│       │       │   newwindow.png}
+\DoxyCodeLine{│       │       │   }
+\DoxyCodeLine{│       │       └───logos}
+\DoxyCodeLine{│       │               build-by-maven-black.png}
+\DoxyCodeLine{│       │               build-by-maven-white.png}
+\DoxyCodeLine{│       │               maven-feather.png}
+\DoxyCodeLine{│       │               }
+\DoxyCodeLine{│       └───work}
+\DoxyCodeLine{│           └───jsp}
+\DoxyCodeLine{│               └───org}
+\DoxyCodeLine{│                   └───apache}
+\DoxyCodeLine{│                       └───jsp}
+\DoxyCodeLine{│                               index\_jsp.class}
+\DoxyCodeLine{│                               }
+\DoxyCodeLine{└───target}
+\DoxyCodeLine{    ├───site}
+\DoxyCodeLine{    │   │   dependencies.html}
+\DoxyCodeLine{    │   │   dependency-convergence.html}
+\DoxyCodeLine{    │   │   dependency-info.html}
+\DoxyCodeLine{    │   │   index.html}
+\DoxyCodeLine{    │   │   modules.html}
+\DoxyCodeLine{    │   │   plugin-management.html}
+\DoxyCodeLine{    │   │   plugins.html}
+\DoxyCodeLine{    │   │   project-info.html}
+\DoxyCodeLine{    │   │   summary.html}
+\DoxyCodeLine{    │   │   }
+\DoxyCodeLine{    │   ├───css}
+\DoxyCodeLine{    │   │       maven-base.css}
+\DoxyCodeLine{    │   │       maven-theme.css}
+\DoxyCodeLine{    │   │       print.css}
+\DoxyCodeLine{    │   │       site.css}
+\DoxyCodeLine{    │   │       }
+\DoxyCodeLine{    │   └───images}
+\DoxyCodeLine{    │       │   close.gif}
+\DoxyCodeLine{    │       │   collapsed.gif}
+\DoxyCodeLine{    │       │   expanded.gif}
+\DoxyCodeLine{    │       │   external.png}
+\DoxyCodeLine{    │       │   icon\_error\_sml.gif}
+\DoxyCodeLine{    │       │   icon\_info\_sml.gif}
+\DoxyCodeLine{    │       │   icon\_success\_sml.gif}
+\DoxyCodeLine{    │       │   icon\_warning\_sml.gif}
+\DoxyCodeLine{    │       │   newwindow.png}
+\DoxyCodeLine{    │       │   }
+\DoxyCodeLine{    │       └───logos}
+\DoxyCodeLine{    │               build-by-maven-black.png}
+\DoxyCodeLine{    │               build-by-maven-white.png}
+\DoxyCodeLine{    │               maven-feather.png}
+\DoxyCodeLine{    │               }
+\DoxyCodeLine{    └───staging}
+\end{DoxyCode}
+ 
